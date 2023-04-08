@@ -1,4 +1,20 @@
 import '@/styles/globals.css'
+
+
+/* Nav Imports */
+import '/src/styles/nav.css';
+
+
+/* Page Specific Imports */
+import '/src/styles/pageStyles/home.css';
+import '/src/styles/pageStyles/about.css';
+import '/src/styles/pageStyles/products.css';
+
+/* Footer Imports */
+import '/src/styles/footer.css';
+
+
+
 import type { AppProps } from 'next/app'
 import Link from 'next/link';
 
@@ -20,9 +36,18 @@ export default function App({ Component, pageProps }: AppProps) {
         </ul>
         <span>The Soap Factory</span>
       </nav>
-      <header></header>
+      <header>
+          <img src='/images/hero.jpg' />
+      </header>
       <Component {...pageProps} />
-      <footer></footer>
+      <footer>
+        <p>
+          &copy; The Soap Factory
+        </p>
+        <Link href='/t-c'>
+          Terms and Conditions
+        </Link>
+      </footer>
     </>
   )
   return <Component {...pageProps} />

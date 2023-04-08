@@ -26,18 +26,5 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-}
 
-nav ul{
-  display: flex;
-  flex-direction: row;
-}
 
-nav ul li{
-  padding: 0rem 1rem;
-}
